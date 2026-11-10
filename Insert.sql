@@ -1,4 +1,4 @@
-INSERT INTO post_offices (address, city, district, postal_index, phone) VALUES
+INSERT INTO Post_offices (address, city, district, postal_code, phone) VALUES
 ('ул. Ленина, д. 12',        'Москва',     'Центральный',  '101000', '+7 (495) 111-22-33'),
 ('пр. Мира, д. 45',          'Москва',     'Северный',     '129090', '+7 (495) 222-33-44'),
 ('ул. Гагарина, д. 8',       'Санкт-Петербург', 'Невский', '190000', '+7 (812) 333-44-55'),
@@ -11,8 +11,8 @@ INSERT INTO post_offices (address, city, district, postal_index, phone) VALUES
 ('ул. Баумана, д. 14',       'Уфа',        'Кировский',    '450000', '+7 (347) 000-11-22'),
 ('ул. Вавилова, д. 7',       'Москва',     'Академический','115000', '+7 (495) 123-45-67');
 
-INSERT INTO mail_acceptance
-    (office_code, track_number, accept_time, declared_value, total_cost, is_paid, dispatch_time) VALUES
+INSERT INTO Mail_acceptance
+    (office_id, tracking_number, acceptance_datetime, declared_value, total_cost, is_paid, dispatch_datetime) VALUES
 (1,  'RR123456781RU', '2026-09-01 10:15', 1500.00,  320.50,  TRUE,  '2026-09-01 18:00'),
 (1,  'RR123456782RU', '2026-09-02 11:40',    0.00,  185.00,  TRUE,  '2026-09-02 18:00'),
 (1,  'RR123456793RU', '2026-09-08 19:20',  600.00,  230.00,  TRUE,  '2026-09-09 10:00'),
@@ -28,4 +28,4 @@ INSERT INTO mail_acceptance
 (9,  'CP123456791RU', '2026-09-15 09:35', 4300.00,  590.00,  TRUE,  '2026-09-15 18:00'),
 (10, 'RR123456792RU', '2026-09-16 17:05',    0.00,  175.30,  TRUE,  NULL),
 (11, '80012345678901','2026-09-07 18:40', 2000.00,  410.00,  TRUE,  '2026-09-08 09:00'),
-(11, 'RR123456795RU', '2026-09-10 12:00', 9500.00,  870.00,  FALSE, NULL);               
+(11, 'RR123456795RU', '2026-09-10 12:00', 9500.00,  870.00,  FALSE, NULL);
