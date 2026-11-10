@@ -7,9 +7,9 @@ CREATE TABLE Post_offices (
     phone VARCHAR(20) NOT NULL
 );
 CREATE TABLE Mail_acceptance (
-    acceptance_id SERIAL PRIMARY KEY, -- Автоинкрементный первичный ключ (никогда не задублируется!)
-    tracking_number VARCHAR(20) NOT NULL, -- Обычный номер отправления (может повторяться в истории)
-    office_id INT NOT NULL, -- Внешний ключ отделения
+    acceptance_id SERIAL PRIMARY KEY,
+    tracking_number VARCHAR(20) NOT NULL,
+    office_id INT NOT NULL,
     acceptance_datetime TIMESTAMP WITHOUT TIME ZONE NOT NULL,
     declared_value NUMERIC(10, 2),
     total_cost NUMERIC(10, 2) NOT NULL,
